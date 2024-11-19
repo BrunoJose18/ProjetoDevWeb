@@ -1,15 +1,16 @@
 body {
-    background-color: #492626;
+    background-color: #000;
 }
 
 body.bg{ /*Organizando a imagem do bg*/
     background-repeat: no-repeat;
-    background-position: center;
+
     background-size: cover;
-    background-image: url(imagens/); /*AINDA SERÁ ADICIONADA A IMAGEM*/
+    background-image: url(imagens/loginbg.jpg);
 }
 
 header { /*Estilizando a logo*/
+    height: 20vh;
     padding: 50px;
     background: linear-gradient(
         180deg
@@ -19,11 +20,17 @@ header { /*Estilizando a logo*/
 
 }
 
-header.img { 
-    width: 150px;
-}
-
 #container_login { /*Degradê do login*/
     background: rgba(0, 0, 0, 0.7);
     padding: 30px;
+}
+
+#favG {
+    width: 28px;
+    height: auto;
+}
+
+#logo {
+    width: 200px;
+    height: auto;
 }
