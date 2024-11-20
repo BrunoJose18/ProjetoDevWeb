@@ -1,7 +1,9 @@
+/* configuração geral(para todas as páginas) */
 body {
-    background-color: #492626;
+    background-color: black;
 }
 
+/* página de login */
 body.bg{ /*Organizando a imagem do bg*/
     background-repeat: no-repeat;
     background-position: center;
@@ -16,6 +18,10 @@ header { /*Estilizando a logo*/
         rgba(0, 0, 0, 0.69)0%,
         rgba(0, 0, 0, 0)100%
     );
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    z-index: 1;
 
 }
 
@@ -26,4 +32,59 @@ header.img {
 #container_login { /*Degradê do login*/
     background: rgba(0, 0, 0, 0.7);
     padding: 30px;
+}
+
+/* página home*/
+.menu{
+    list-style: none;
+    padding-left: 30px;
+}
+
+.menu li {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.menu li a{
+    color: white;
+}
+
+#hero{
+    height: 630px;
+    width: 100%;
+    background-position: center;
+    background-image: url(imagens/banner.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+}
+#hero-infos{
+    padding: 0;
+    margin-top: 170px;
+    z-index: 3;
+    position: relative;
+}
+
+#hero-infos p {
+    padding-top: 150px;
+}
+
+.botaoBranco{
+    background-color: white;
+
+}
+
+.botaoTransparente{
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+.botaoBranco:hover{
+    opacity: 0.6;
+}
+
+.botaoTransparente:hover{
+    opacity: 0.6;
 }

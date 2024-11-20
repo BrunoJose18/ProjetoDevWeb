@@ -1,0 +1,162 @@
+body{
+    background-color: black;
+}
+
+header{
+width: 100%;
+padding-left: 10px;
+background: linear-gradient(
+    180deg,
+    rgba(0,0,0,0.69) 0%,
+    rgba(0,0,0,0) 100%
+);
+position: absolute;
+
+}
+
+.menu{
+    list-style: none;
+    padding-top:40px;
+}
+
+.menu li{
+    display: inline-block;
+    margin-left: 150px;
+}
+.menu li a{
+    padding-left: 50px;
+    color: white;
+    text-decoration: none;
+    
+}
+
+#hero{
+    height: 650px;
+    background-position: center;
+    background-image: url(imagens/BannerGuerraCivil.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+
+}
+
+#hero::after{
+    content: '';
+    padding: 0;
+    width: 100%;
+    height: 100px;
+    display: block;
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, #000000 100%);
+    position: absolute;
+    z-index: 2;
+    top: calc(650px - 100px);
+}
+
+#hero-infos{
+    padding: 0px;
+    z-index: 3;
+    position: relative;
+
+}
+
+#hero-infos p{   
+    font-size:large;
+    padding-top: 50px;
+}
+
+#hero-infos img{
+    width: 800px;
+    padding-left: 300px;
+    padding-top: 10px
+}
+
+/*estilos dos botoes*/
+.btn-white{
+    background-color: white;
+    z-index: 3;
+
+}
+
+.btn-translucent{
+    background-color: rgba(255, 255,255, 0.2);
+    color: white;
+}
+
+.btn-translucent:hover{
+    color: white;
+    opacity: 0.8;
+}
+
+.btn-white:hover{
+    color: white;
+    opacity: 0.8;
+}
+
+.btn-custom-round{
+    padding: 5px 9px !important;
+}
+
+#main-content{
+    margin-top: 20px;
+}
+
+.opacity-50{
+    opacity: 0.5;
+}
+
+.filme_lista{
+    overflow-x: scroll;
+    list-style: none;
+    padding: 20px 0;
+    white-space: nowrap;
+    display: block;
+}
+
+.filme_lista::-webkit-scrollbar{
+    display: none;
+}
+
+.filme{
+    display: inline-block;
+    width: 250px;
+    margin-right: 10px;
+    border-radius: 3px;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow-y: hidden;
+}
+
+.filme:hover{
+    cursor: pointer;
+    transform: scale(1.3);
+    z-index: 999;
+}
+
+.filme:hover .filme_info{
+    transform: scale(1);
+    transition: 0.5s;
+}
+
+.filme:first-child{
+    margin-left: 50px;
+}
+
+.filme_info{
+    background-color: #171717;
+    padding: 10px;
+    height: 70px;
+    width: 100%;
+    transform:scale(0);
+}
+
+.filme_info .col-12{
+    margin-top: 3px;
+}
+
+.filme_info .col-12:first-child{
+    margin-bottom: 20px;
+}
+
+
+/*estilo do main*/
+
