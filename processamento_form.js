@@ -15,7 +15,7 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
         if (lembrar) {
             localStorage.setItem("email", email); // Simula o lembrar de mim
         }
-        window.location.href = ".html"; //ADICIONEM A HOME AQUI
+        window.location.href = "home.html";
     } else {
         errorMessage.textContent = "Email ou senha inválidos. Tente novamente.";
         errorMessage.classList.remove("d-none");

@@ -1,10 +1,10 @@
+
 body {
     background-color: #000;
 }
 
 body.bg{ /*Organizando a imagem do bg*/
     background-repeat: no-repeat;
-
     background-size: cover;
     background-image: url(imagens/loginbg.jpg);
 }
@@ -17,7 +17,6 @@ header { /*Estilizando a logo*/
         rgba(0, 0, 0, 0.69)0%,
         rgba(0, 0, 0, 0)100%
     );
-
 }
 
 #container_login { /*Degradê do login*/
@@ -25,12 +24,12 @@ header { /*Estilizando a logo*/
     padding: 30px;
 }
 
-#favG {
+#favG { /*Ajuste do tamanho do icone do goole*/
     width: 28px;
     height: auto;
 }
 
-#logo {
+#logo { /*Ajuste do tamanho do icone da netflix*/
     width: 200px;
     height: auto;
 }
